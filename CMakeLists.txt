@@ -13,8 +13,7 @@ set(SOURCES src/main.cpp )
 # Add headers, if any (replace "dummy.hpp" with your actual header files)
 set(HEADERS include/dummy.hpp)
 
-include(FetchContent)
-include(cmake/opencv.cmake)
+include(cmake/opencv_4.6.0.cmake)
 
 message("------------->" ${HEADERS})
 add_executable(MyApp ${SOURCES} include/dummy.hpp)
